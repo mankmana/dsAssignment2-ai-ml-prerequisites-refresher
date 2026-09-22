@@ -1,1 +1,248 @@
-#Introduction to NumPy
+# 2. Introduction to NumPy for Deep Learning
+
+## Overview
+
+This notebook introduces NumPy from a beginner perspective and connects the concepts to Data Science, Machine Learning, and Deep Learning.
+
+The notebook was executed completely with its inputs and outputs saved. The video walkthrough explains the important theory, code cells, outputs, and how the NumPy concepts relate to neural-network operations.
+
+---
+
+## Links
+
+- **Executed Colab:** [Introduction to NumPy - Executed](https://colab.research.google.com/drive/1q3aLVJzBw08gTOoXIAym2Vmd8gGkD6hD?usp=sharing)
+- **YouTube Walkthrough:** [Introduction to NumPy - Video Walkthrough](https://youtu.be/bTGmBFyaxCs)
+
+---
+
+## Topics Covered
+
+### NumPy Setup and Reproducibility
+- Importing NumPy
+- Importing Matplotlib for visualizations
+- Checking the NumPy version
+- Setting a random seed using `np.random.seed()`
+- Understanding reproducibility in machine-learning experiments
+
+### NumPy Arrays and Tensors
+- Creating 1D, 2D, and 3D arrays
+- Understanding vectors, matrices, and tensors
+- Using `shape`
+- Using `ndim`
+- Understanding how images, batches, and neural-network weights are represented as multidimensional arrays
+
+### Array Creation
+- Creating arrays from Python lists
+- Creating arrays of zeros
+- Creating arrays of ones
+- Creating arrays with constant values
+- Creating numerical sequences
+- Creating identity matrices
+
+### Data Types
+- Understanding NumPy `dtype`
+- Integer and floating-point data types
+- Precision and memory usage
+- Why `float32` is commonly used in deep learning
+
+### Indexing and Slicing
+- Zero-based indexing
+- Negative indexing
+- Selecting individual values
+- Slicing ranges
+- Using start, stop, and step
+- Indexing multidimensional arrays
+- Selecting rows and columns
+
+### Batch Processing
+- Understanding the batch dimension
+- Selecting multiple samples from a dataset
+- Using slicing for batch processing
+- Relationship between batch size and tensor shape
+
+### Boolean Indexing
+- Creating Boolean masks
+- Filtering values using conditions
+- Selecting values that satisfy a condition
+
+### Fancy Indexing
+- Selecting multiple non-contiguous elements
+- Using arrays of indexes
+- Connection to feature selection and embedding lookup
+
+### Element-Wise Operations
+- Addition
+- Subtraction
+- Multiplication
+- Division
+- Exponentiation
+- Difference between element-wise multiplication and matrix multiplication
+
+### NumPy Mathematical Functions
+- Exponential functions
+- Square roots
+- Logarithms
+- Other element-wise mathematical operations
+
+### Activation Functions
+- ReLU
+- Sigmoid
+- Tanh
+- Understanding nonlinear transformations
+- Why neural networks use activation functions
+
+### Broadcasting
+- Understanding NumPy broadcasting
+- Broadcasting rules
+- Comparing dimensions from right to left
+- Compatible and incompatible shapes
+- Performing operations without manually repeating arrays
+
+### Bias Addition
+- Adding a bias vector to a matrix
+- Using broadcasting to add the same bias to multiple samples
+- Connection to neural-network layers
+
+### Matrix Multiplication
+- Understanding matrix multiplication
+- Difference between element-wise multiplication and matrix multiplication
+- Matrix shape rules
+- Inner and outer dimensions
+- Dot products
+- Matrix multiplication in neural networks
+
+### Neural-Network Forward Pass
+- Multiplying inputs by weights
+- Adding biases
+- Applying activation functions
+- Understanding the basic computation of a dense neural-network layer
+
+### Statistics and Aggregation
+- Sum
+- Mean
+- Minimum
+- Maximum
+- Variance
+- Standard deviation
+
+### Understanding `axis`
+- Aggregating across rows
+- Aggregating across columns
+- Understanding `axis=0`
+- Understanding `axis=1`
+- Why axis selection is important
+
+### Loss Functions
+- Understanding what a loss function measures
+- Mean Squared Error
+- Comparing predictions with target values
+- Why neural-network training attempts to minimize loss
+
+### Reshaping Arrays
+- Changing array shapes
+- Keeping the same values while changing their structure
+- Tensor manipulation using reshape operations
+
+### Flattening
+- Converting multidimensional arrays into one-dimensional arrays
+- Why flattening may be needed before dense neural-network layers
+
+### Transposing
+- Swapping rows and columns
+- Swapping array axes
+- Why transposition is useful in matrix operations
+
+### Random Number Generation
+- Generating random values
+- Reproducible randomness
+- Random values in machine-learning workflows
+- Random initialization and shuffling
+
+### Weight Initialization
+- Why neural-network weights should not all start with the same value
+- Random weight initialization
+- He initialization
+- Xavier initialization
+- Relationship between initialization techniques and activation functions
+
+### Vectorization
+- Replacing Python loops with NumPy array operations
+- Why vectorized operations are faster
+- Importance of vectorization for large datasets and neural-network training
+
+### Performance Comparison
+- Comparing Python loops with NumPy vectorized operations
+- Understanding the performance advantage of NumPy
+
+### Mini Neural Network
+- Combining NumPy concepts into a small neural network
+- Input arrays
+- Weight matrices
+- Bias vectors
+- Matrix multiplication
+- Activation functions
+- Forward propagation
+
+### XOR Problem
+- Understanding the XOR problem
+- Why XOR is a nonlinear problem
+- Why a simple linear model cannot solve XOR
+- Why hidden layers and nonlinear activation functions are useful
+
+---
+
+## Key Takeaways
+
+This notebook demonstrates how NumPy provides the numerical foundation for Machine Learning and Deep Learning.
+
+The main concepts learned include:
+
+- Data is represented using multidimensional arrays or tensors
+- Array shapes determine how data is organized
+- Indexing and slicing allow specific data to be selected
+- Element-wise operations are used for numerical transformations and activation functions
+- Broadcasting allows efficient operations between compatible array shapes
+- Matrix multiplication is the core computation inside neural-network layers
+- Aggregation functions are used for statistics and loss calculations
+- Reshaping allows tensors to be converted into different formats
+- Random initialization provides neural-network weights with suitable starting values
+- Vectorization makes numerical computations significantly faster
+- Neural networks combine these NumPy concepts into a complete computation pipeline
+
+---
+
+## Why NumPy Matters for Deep Learning
+
+NumPy introduces many of the same concepts later used in frameworks such as PyTorch and TensorFlow.
+
+Important concepts include:
+
+- Tensors
+- Shapes
+- Broadcasting
+- Matrix multiplication
+- Activation functions
+- Reshaping
+- Statistics
+- Weight initialization
+- Vectorization
+
+Understanding these concepts in NumPy makes it easier to understand how deep-learning frameworks work internally.
+
+---
+
+## Repository Files
+
+- `2 Introduction to NumPy - Executed.ipynb`
+- `README.md`
+- [YouTube Video Walkthrough](https://youtu.be/bTGmBFyaxCs)
+
+---
+
+## Conclusion
+
+This notebook builds the numerical foundation required for Machine Learning and Deep Learning.
+
+It starts with basic NumPy arrays and gradually connects them to neural-network concepts such as tensors, batches, activation functions, broadcasting, matrix multiplication, loss functions, weight initialization, and vectorized computation.
+
+The final mini neural-network example demonstrates how these concepts work together in a practical deep-learning-style computation.
